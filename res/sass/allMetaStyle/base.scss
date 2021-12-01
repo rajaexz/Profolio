@@ -1,0 +1,42 @@
+*,::before,::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+   }
+   html{
+    scroll-behavior: smooth;
+   }
+   body{
+    font-family: var(--body-font);
+       font-size: var(--normal-font);
+       background: var(--container-color);
+       color: var(--title-color);   
+       transition: .5s; //animatio for dark mode
+       
+   }
+   h1,h2,h3{
+       font-weight: var(--font-semi-bold);
+       color: var(--title-color);
+       line-height: 1.5;
+   }
+   ul{
+       list-style: none;
+   }
+   h3{
+
+   }
+   h1,h2{
+    font-family:'Source Sans Pro';
+   }
+   a{
+       text-decoration: none;
+       font-family: 'Poppins', sans-serif;
+   }
+   p{
+    font-family: 'Poppins', sans-serif;
+   }
+   img{
+       max-width: 100%;
+       height: auto;
+   }
+  

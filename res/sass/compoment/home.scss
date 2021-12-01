@@ -1,0 +1,46 @@
+.home{
+background-color: var(--first-color);
+
+
+&__container{
+    grid-template-rows: auto 1fr ;
+  
+}
+
+&__title{
+color: var(--container-color);
+position: relative;
+letter-spacing: 2px;
+line-height: 2;
+margin-bottom: var(--mb-1-5);
+font-size: var(--biggest-font-size);
+font-weight: var(--font-semi-bold);
+span{
+   color: var(--title-color);
+ }
+}
+span::after{
+    content: '';
+    position: absolute;
+    left: 50px;
+    width:225px;
+    bottom: 0;
+    height: 3px;
+    background: var(--container-color);
+}
+&__depcription{
+    margin-bottom: var(--mb-2);
+    font-weight: var(--font-semi-bold);
+   font-size: var(--normal-font-size);
+}
+
+&__button,&__button-1{
+     border-radius: 5px;
+     color: var(--title-color);
+     width: 30vh;
+}
+&__button{
+    background-color: var(--container-color);
+}
+
+}

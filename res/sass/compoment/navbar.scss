@@ -1,0 +1,36 @@
+.main__header{
+    background-color: var(--first-color);
+}
+.nav{
+    align-items: center;
+    padding: var(--header-height) 0 0 0;
+    background-color: var(--first-color);
+    &__logo{
+    font-size: var(--biggest-font-size);
+    padding-bottom: var(--mb-1-5);
+    }
+    &__menu{
+        display: none;
+
+    }
+    &__toggle{
+        font-size: var(--normal-font-size);
+        padding-bottom: var(--mb-1-5);
+        display: flex;
+        align-items: center;
+        span{
+            padding-left: var(--mb-0-75);
+        }
+    }
+    &__contact{
+        font-size: var(--normal-font-size);
+        padding-bottom: var(--mb-2);
+        color: var(--title-color);
+        padding: var(--mb-1) var(--mb-2);
+        margin: var(--mb-2) 0;
+        background-color: var(--container-color);
+        span{
+            font-weight: var(--font-semi-bold);
+        }
+    }
+}

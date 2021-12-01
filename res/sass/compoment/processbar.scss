@@ -1,0 +1,37 @@
+
+
+.html-svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) ;
+  width: 70px;
+}
+
+
+  .progress {
+  width: 115px;
+  height: 115px;
+  }
+   .progress  circle{
+    width: 150px;
+  height: 150px;
+  fill: var(--first-color);
+  stroke-width: 5px;
+  stroke: #000;
+  transform: translate(6px, 6px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  
+  }
+  .progress  circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke:var(--first-color);
+  
+  }
+  .progress  circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * var(--persentage))/100);
+    stroke:var(--container-color);
+    
+  }
