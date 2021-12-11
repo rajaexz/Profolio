@@ -24,6 +24,11 @@ margin-bottom:var(--mb-1);
 }
 
 
+&__right h3 {
+  color: var(--container-color);
+}
+
+
 &__box{
 margin :var(--mb-1) 0;
 
@@ -32,7 +37,7 @@ margin :var(--mb-1) 0;
 
 &__bottom-line{
   border:none;
-  border-top:4px dotted var(--container-color);
+  border-top:3px dashed var(--container-color);
   color: var(--container-color);
   background-color:var(--title-color);
   height:1px;

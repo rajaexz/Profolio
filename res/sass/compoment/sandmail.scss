@@ -1,0 +1,89 @@
+.sand-mail{
+    min-height: 100vh;
+    position: relative;
+.bg{
+    height: 100%;
+    width: 50%;
+    position:absolute;
+   top:0;
+   z-index: -1;
+}
+.bg-1{
+background-color: var(--first-color);
+left: 0;
+}
+.bg-2{
+    background-color: var(--title-color);
+    right: 0;
+    
+}
+
+
+&__title {
+    color: var(--container-color);
+    font-size: var(--small-big-font-size);
+    margin: var(--mb-1) 0 var(--mb-2) 0;
+}
+&__container{
+
+    padding: var(--header-height) 0;
+}
+&__data {
+    max-width: 100vw;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    border: 6px solid var(--container-color);
+    border-radius: 10px;
+    padding: var(--mb-2) 1rem 3rem 1rem;
+
+   
+}
+
+&__form-box{
+    width: 50%;
+}
+&__mian-box{
+    width: 100%;
+   display: flex; 
+  gap: var(--mb-1);
+}
+
+&__shear{
+    margin: auto;
+  width: 400px;
+
+  padding: var(--mb-1) var(--mb-2);
+}
+&__shear-box{
+    margin: var(--mb-1) 0 var(--mb-2) 0;
+padding: .868rem;
+border: 2px solid var(--title-color);
+background-color: var(--container-color);
+display: flex;
+justify-content: center;
+align-items: center;
+
+border-radius: 50%;
+position: relative;
+}
+&__dotted{
+width: 70px;
+
+height: 70px;
+
+top: 4%;
+left: 4%;
+
+z-index: -1;
+}
+&__shear-box i{
+    color: var(--title-color);
+   font-size: 3rem;
+   z-index: 900;
+}
+}
+
+.svg-select path{
+    stroke: var(--first-color);
+    stroke-width: 1px;
+}

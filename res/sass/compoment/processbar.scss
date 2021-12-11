@@ -31,7 +31,7 @@
   
   }
   .progress  circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440 * var(--persentage))/100);
+    
     stroke:var(--container-color);
     
   }

@@ -1,0 +1,26 @@
+.my-slef{
+    margin: var(--mb-1) 0;
+    padding: var(--header-height) 0;
+    &__title {
+        margin: var(--mb-1) 0 var(--mb-2) 0;
+    }
+  &__data{
+      background-color: var(--title-color);
+      color: var(--container-color);
+
+      border: 6px solid var(--first-color);
+      border-radius: 10px;
+      padding:  var(--mb-2) 1rem 3rem 1rem;
+
+
+ text-align: center;
+
+  }
+    
+  &__text{
+    font-size: var(--small-font-size);
+   letter-spacing: 2px;
+ font-weight:300;
+  }
+}
+

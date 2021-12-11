@@ -1,7 +1,6 @@
 .home{
 background-color: var(--first-color);
 
-
 &__container{
     grid-template-rows: auto 1fr ;
   
@@ -18,16 +17,18 @@ font-weight: var(--font-semi-bold);
 span{
    color: var(--title-color);
  }
-}
-span::after{
-    content: '';
+ span::after{
+  content: "";
     position: absolute;
-    left: 50px;
-    width:225px;
-    bottom: 0;
+    left: 48px;
+    width: 211px;
+    bottom: 14px;
     height: 3px;
     background: var(--container-color);
+
 }
+}
+
 &__depcription{
     margin-bottom: var(--mb-2);
     font-weight: var(--font-semi-bold);
@@ -42,5 +43,25 @@ span::after{
 &__button{
     background-color: var(--container-color);
 }
+.owl-theme .owl-controls .owl-page{
+   display: block;
+   background-color: var(--container-color);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+}
+.owl-theme .owl-controls .owl-page span{
+  background-color: var(--title-color);
 
 }
+.owl-theme .owl-controls {
+  position: absolute !important;
+  top: 350px;
+  right: 50px;
+}
+}
+
