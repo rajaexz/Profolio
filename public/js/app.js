@@ -1,12 +1,23 @@
+//++++++++++++++++++++ Curser Efact  ++++++++++++++++++++++++++
+
+        const cursor = document.getElementById('cursor');
+        document.onmousemove = function (e) {
+            cursor.style.left = (e.pageX - 25) + "px";
+            cursor.style.top = (e.pageY - 25) + "px";
+            cursor.style.display = "block";
+        }
+
+
+// ++++++++++++++++++++++Owl Carousel++++++++++++++++++++++++++++
 var owl = $('.owl-carousel');
 owl.owlCarousel({
-
- 
   slideSpeed : 300,
   paginationSpeed : 400,
   singleItem:true
 
 });
+
+// ++++++++++++++++++++++Circel Animation++++++++++++++++++++++++++++
 const demo =()=>{
     
 const svgCalss = document.querySelectorAll('.progress-circle');
