@@ -261,6 +261,7 @@ textarea {
   background-color: var(--container-color);
   border: none;
   outline: none;
+  border-radius: 5px;
 }
 .nav__contact span {
   font-weight: var(--font-semi-bold);
@@ -287,8 +288,8 @@ textarea {
 .home__title span::after {
   content: "";
   position: absolute;
-  left: 48px;
-  width: 211px;
+  left: 0px;
+  width: 7vw;
   bottom: 14px;
   height: 3px;
   background: var(--container-color);
@@ -611,7 +612,7 @@ textarea {
 }
 .sand-mail__shear {
   margin: auto;
-  width: 400px;
+  width: 40vh;
   padding: var(--mb-1) var(--mb-2);
 }
 .sand-mail__shear-box {
@@ -838,6 +839,11 @@ textarea {
   display: none;
 }
 
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
 button {
   background-color: #04AA6D;
   color: #ffffff;
@@ -876,6 +882,73 @@ button:hover {
 /* Mark the steps that are finished and valid: */
 .step.finish {
   background-color: #04AA6D;
+}
+
+/* component */
+.star-rating {
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  /* padding: 0 2em; */
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+  color: #f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}
+
+.getRatting {
+  margin: var(--mb-1) 0;
+  padding: var(--header-height) 0;
+}
+.getRatting__title {
+  color: var(--title-color);
+  letter-spacing: 2px;
+  margin-bottom: var(--mb-1);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+}
+.getRatting__row {
+  display: flex;
+  width: 70%;
+  height: 100px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.getRatting__row-1 {
+  margin: var(--mb-1) 0;
+  padding: 6rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mb-2);
+}
+.getRatting__button {
+  padding: 0 3rem;
+  height: 40px;
+  background-color: var(--title-color);
+  border: 2px solid white;
+  border-radius: 5px;
+  color: var(--container-color);
 }
 
 /*# sourceMappingURL=style.css.map */

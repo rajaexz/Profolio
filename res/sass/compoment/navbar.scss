@@ -13,6 +13,7 @@
         display: none;
 
     }
+
     &__toggle{
         font-size: var(--normal-font-size);
         padding-bottom: var(--mb-1-5);
@@ -31,7 +32,9 @@
         background-color: var(--container-color);
         border: none;
         outline: none;
+        border-radius:5px;
         span{
+            
             font-weight: var(--font-semi-bold);
         }
     }

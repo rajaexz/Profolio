@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="./public/assets/img/profile-pic.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+        @font-face{
+            src: url(./public/font/SourceSansPro-Black.ttf) ;
+            font-family: source ;
+        } 
+        
+        body{
+           font-family: source ;
+           height: 220vh;
+        }
+         /*  header */
+         .resume-header{
+            margin-bottom: 4rem;
+         }
+        .resume-contact{
+            display: inline-block;
+            width: 219px;
+        padding-top:3rem ;
+        }
+        .resume-title{
+         display: inline-block;
+         width: 650px;
+        }
+        .resume-header .row-1{
+           display: block;
+           width: 100%;
+           padding: 0 3rem;
+           }
+           .resume-name{
+            font-size: 48px !important;
+            font-weight: 900 !important;
+            letter-spacing: 0.4rem !important;
+             font-family: source;
+             color: rgb(74, 174, 74) !important;
+        }
+  /*  info */
+           .resume-intro .row-1{
+            align-items:center;
+            display: block;
+           width: 100%;
+           padding: 0 3rem;
+        }
+           
+     
+        .resume-intro .row-1 .col-1{
+            display: inline-block;
+         width: 200px;
+        
+        }
+
+        .resume-intro .row-1 .col {
+            align-items:center;
+            display: inline-block;
+       width: 674px;
+           padding: 3rem 1rem;
+        }
+
+/*resume-main*/
+
+.resume-body .row .resume-main{
+    display: inline-block;
+    width: 645px;
+}
+
+        .resume-wrapper{
+            padding: 8rem !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        }
+        
+        .resume-section-heading{
+         font-weight: 600 !important;
+         font-size:large !important;
+        }.resume-section-heading{
+        padding: 10px 30px !important;
+        color: rgb(74, 174, 74) !important;
+        }
+        .box-span{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 10px;
+            height: 30px;
+            background-color:  rgb(74, 174, 74) !important;
+        }
+        
+   
+        /*resume-aside  */
+        .resume-aside  {
+            display: inline-block;
+         width: 300px;
+
+        }
+        .resume-body .row{
+            display: block;
+           width: 100%;
+        }
+        
+        .resume-aside {
+            border-left: 1px solid rgba(0,0,0,0.08) !important;
+            padding-left: 2rem !important;
+        }
+         ul,li,h1,h2,h3,h4,p,a{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            margin: 10px ;
+            
+        }
+        .item-title{
+            margin: 15px 0;
+        }
+        svg{
+            width: 15px;
+        }
+        img {
+    vertical-align:unset;
+}
+        .resume-social-list{
+            display: block;
+            width: 100%;
+        }
+        .resume-footer{
+            width: 500px;
+            margin: auto;
+        }
+        .resume-footer .list-inline-item {
+              display: inline-block;
+              margin: auto;
+        }
+
+ </style>
+</head>
+<body>
+    <article class="container " style="margin: auto; width: 986px;">
+        <div class="resume-header" >
+            <div class="row-1 ">
+                    <div class="resume-title "> 
+                        <h2 class="resume-name  text-uppercase" ><%= name %></h2>
+                        <div class="resume-tagline mb-3 mb-md-0">Senior Software Engineer</div>
+                    </div><!--//resume-title-->
+                    <div class="resume-contact ">
+                        <ul class="list-unstyled">
+                            <li ><a>+91<%= phone %></a></li>
+                        <li><a>simon@yourwebsite.com</a></li>
+                            <li><a>www.yourwebsite.com</a></li>
+                            <li ><a>New York</a></li>
+                        </ul>
+                    </div><!--//resume-contact-->
+                </div><!--//row-->
+                
+            </div><!--//resume-header-->
+    <hr>
+    <div class="resume-intro ">
+        <div class="row-1 ">
+            <div class="col-1">
+                <img class="resume-profile-image  " src="../assets/profile-pic.png" alt="image" width="150px">
+            </div>
+            
+            <div class="col text-start">
+                <p class="mb-0">Summarise your career here. <a class="theme-link" href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/" target="_blank">You can make a PDF version of your resume using our free Sketch template here</a>. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.  Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. </p>
+            </div><!--//col-->
+        </div>
+    </div><!--//resume-intro-->
+    <hr>
+
+
+    <div class="resume-body">
+ <div class="row">
+    <div class="resume-main ">
+        <section class="work-section">
+           <span class="heading-span" style="position: relative;"><div class="box-span"></div><h3 class="resume-section-heading ">Work Experiences</h3></span> 
+            <div class="item mb-3">
+                <div class="item-heading">
+                    <h4 class="item-title ">Senior Software Engineer</h4>
+                    <div class="item-meta">Google | 2019 - Present</div>
+                    
+                </div>
+                <div class="item-content">
+                    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
+                    <ul class="resume-list">
+                        <li>Lorem ipsum dolor sit amet, consectetuer.</li>
+                        <li>Aenean commodo ligula eget dolor.</li>
+                        <li>Etiam ultricies nisi vel augue.</li>
+                    </ul>
+                </div>
+            </div>
+          <!--//item-->
+            <div class="item">
+                <div class="item-heading ">
+                    <h4 class="item-title ">Backend Developer</h4>
+                    <div class="item-meta ">Amazon | 2014 - 2016</div>
+                    
+                </div>
+                <div class="item-content">
+                    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+            </div><!--//item-->
+            <div class="item">
+                <div class="item-heading ">
+                    <h4 class="item-title ">Frontend Developer</h4>
+                    <div class="item-meta ">Startup | 2013 - 2014</div>
+                    
+                </div>
+                <div class="item-content">
+                    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
+                </div>
+            </div><!--//item-->
+            
+        </section><!--//work-section-->
+
+        
+        <section class="project-section py-3">
+        <span class="heading-span" style="position: relative;"><div class="box-span"></div><h3  class="resume-section-heading ">Projects</h3></span> 
+            <div class="item mb-3">
+                <div class="item-heading ">
+                    <h4 class="item-title">Project Lorem Ipsum</h4>
+                    <div class="item-meta ">Open Source</div>
+                    
+                </div>
+                <div class="item-content">
+                    <p>You can use this section for your side projects. You can <a href="#" class="theme-link">provide a project link here</a> as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    
+                    
+                </div>
+            </div><!--//item-->
+            <div class="item">
+                <div class="item-heading">
+                    <h4 class="item-title ">Project Sed Fringilla</h4>
+                    <div class="item-meta">Open Source</div>
+                    
+                </div>
+                <div class="item-content">
+                    <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                    
+                </div>
+            </div><!--//item-->
+            <div class="item">
+                <div class="item-heading ">
+                    <h4 class="item-title">Project Praesent </h4>
+                    <div class="item-meta">Open Source</div>
+                    
+                </div>
+                <div class="item-content">
+                    <p>You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                    
+                </div>
+            </div><!--//item-->
+        </section><!--//project-section-->	
+    </div><!--//resume-main-->
+    <div class="resume-aside">
+        <section class="skills-section ">
+     <span class="heading-span" style="position: relative;"><div class="box-span"></div><h3 class="resume-section-heading mb-4">Skills</h3></span> 
+            <div class="item">
+                <h4 class="item-title">Technical</h4>
+                <ul class="list-unstyled resume-skills-list">
+                <%= Skills%>
+                    </ul>
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="item-title">Professional</h4>
+                    <ul class="list-unstyled resume-skills-list">
+                        <li class="mb-2">Effective communication</li>
+                        <li class="mb-2">Team player</li><li>
+                            </li><li class="mb-2">Strong problem solver</li>
+                            <li>Good time management</li>
+                        </ul>
+                    </div><!--//item-->
+                </section><!--//skills-section-->
+                <section class="education-section py-3">
+                 <span class="heading-span" style="position: relative;" ><div class="box-span"></div><h3 class="text-uppercase resume-section-heading mb-4">Education</h3></span> 
+                    <ul class="list-unstyled resume-education-list">
+                        <li class="mb-3">
+                            <div class="resume-degree">MSc in Computer Science</div>
+                            <div class="resume-degree-org ">University College London</div>
+                            <div class="resume-degree-time ">2010 - 2011</div>
+                        </li>
+                        <li>
+                            <div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
+                            <div class="resume-degree-org text-muted">Imperial College London</div>
+                            <div class="resume-degree-time text-muted">2007 - 2010</div>
+                        </li>
+                    </ul>
+                </section><!--//education-section-->
+           <!--//education-section-->
+                <section class="skills-section py-3">
+               <span class="heading-span" style="position: relative;"><div class="box-span"></div><h3 class="text-uppercase resume-section-heading mb-4">Languages</h3></span> 
+                    <ul class="list-unstyled resume-lang-list">
+                        <li class="mb-2">  <span class="text-muted">(Native)</span></li>
+                        <li>Spanish <span class="text-muted">(Professional)</span></li>
+                    </ul>
+                </section><!--//certificates-section-->
+                <section class="skills-section py-3">
+                    <span class="heading-span" style="position: relative;"><div class="box-span"></div><h3 class="text-uppercase resume-section-heading mb-4">Interests</h3></span> 
+                    <ul class="list-unstyled resume-interests-list mb-0">
+                        <li class="mb-2">Climbing</li>
+                        <li class="mb-2">Snowboarding</li>
+                        <li class="mb-2">Photography</li>
+                        <li>Travelling</li>
+                    </ul>
+                </section><!--//certificates-section-->
+            </aside><!--//resume-aside-->
+        </div><!--//row-->
+ </div>
+ <hr>
+ <div class="resume-footer ">
+    <ul class="resume-social-list">
+        <li class="list-inline-item"><a class="resume-link" href="#">github.com/username</span></a></li>
+        <li class="list-inline-item"><a class="resume-link" href="#">@twittername</span></a></li>
+    </ul>
+</div><!--//resume-footer-->
+    </div>
+    </article>
+
+</body>
+</html>

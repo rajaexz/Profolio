@@ -18,13 +18,14 @@ span{
    color: var(--title-color);
  }
  span::after{
+
   content: "";
-    position: absolute;
-    left: 48px;
-    width: 211px;
-    bottom: 14px;
-    height: 3px;
-    background: var(--container-color);
+  position: absolute;
+  left: 0px;
+  width: 7vw;
+  bottom: 14px;
+  height: 3px;
+  background: var(--container-color);
 
 }
 }
