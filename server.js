@@ -7,6 +7,8 @@ const path = require("path");
 const cors= require('cors')
 const pdf = require('html-pdf');
 const ejs =require('ejs')
+const port = process.env.prot || 3000;
+
 app.use(express.urlencoded({extended:true}));
 app.use( express.static(path.join(__dirname, 'public')));
 app.use(express.json()); 
@@ -109,6 +111,6 @@ var html = temp(req.body);
       stream.pipe(res);
   });
 });
-app.listen('3000',()=>{
+app.listen(port,()=>{
     console.log('server is working ');
 })
