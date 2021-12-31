@@ -6,13 +6,11 @@ const fs = require("fs");
 const path = require("path");
 const cors= require('cors')
 const pdf = require('html-pdf');
-
-  const ejs =require('ejs')
+const ejs =require('ejs')
 app.use(express.urlencoded({extended:true}));
 app.use( express.static(path.join(__dirname, 'public')));
 app.use(express.json()); 
 app.use(cors());
-
 app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'index.html'))
 })
